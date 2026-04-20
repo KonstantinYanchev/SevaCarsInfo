@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Professional Automotive Service",
+    "subtitle": "Expert repair and maintenance for all vehicle types. American muscle car specialists.",
+    "cta": {
+      "primary": "Our Services",
+      "secondary": "Contact Us"
+    },
+    "badge": "Professional Service"
+  },
+  "home": {
+    "whyChoose": "Why Choose Us",
+    "features": {
+      "expert": {
+        "title": "Expert Mechanics",
+        "desc": "Certified professionals with years of experience in automotive repair and diagnostics"
+      },
+      "fast": {
+        "title": "Fast Service",
+        "desc": "Quick turnaround times without compromising on quality or safety standards"
+      },
+      "quality": {
+        "title": "Quality Guarantee",
+        "desc": "All work backed by our comprehensive warranty and satisfaction guarantee"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive automotive services for all makes and models",
+    "list": {
+      "maintenance": {
+        "title": "General Maintenance",
+        "desc": "Oil changes, filter replacements, fluid checks, and routine inspections"
+      },
+      "diagnostics": {
+        "title": "Engine Diagnostics",
+        "desc": "Advanced computer diagnostics, engine repair, and performance optimization"
+      },
+      "brakes": {
+        "title": "Brake Service",
+        "desc": "Brake pad replacement, rotor resurfacing, and complete brake system checks"
+      },
+      "electrical": {
+        "title": "Electrical Systems",
+        "desc": "Battery replacement, alternator repair, starter service, and electrical diagnostics"
+      },
+      "suspension": {
+        "title": "Suspension & Steering",
+        "desc": "Shock absorber replacement, wheel alignment, balancing, and steering repair"
+      },
+      "transmission": {
+        "title": "Transmission Service",
+        "desc": "Transmission flush, repair, and replacement services for all transmission types"
+      }
+    },
+    "cta": {
+      "title": "Need a Service?",
+      "subtitle": "Contact us today to schedule an appointment or get a free quote",
+      "button": "Get in Touch"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your trusted automotive service partner",
+    "story": {
+      "title": "Our Story",
+      "content": "Founded with a passion for American muscle cars and automotive excellence, Seva Cars has been serving the community with dedication and expertise. Our team combines traditional craftsmanship with modern diagnostic technology to deliver exceptional service."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide honest, reliable, and professional automotive service that keeps your vehicle running at peak performance while building lasting relationships with our customers."
+    },
+    "values": {
+      "title": "Our Values",
+      "list": {
+        "honesty": {
+          "title": "Honesty & Integrity",
+          "desc": "We provide transparent service with honest assessments and fair pricing"
+        },
+        "excellence": {
+          "title": "Technical Excellence",
+          "desc": "Continuous training and investment in the latest diagnostic equipment"
+        },
+        "customer": {
+          "title": "Customer First",
+          "desc": "Your satisfaction and safety are our top priorities in every service"
+        },
+        "passion": {
+          "title": "Passion for Cars",
+          "desc": "We treat every vehicle with the care and expertise it deserves"
+        }
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Experienced professionals dedicated to your vehicle"
+    }
+  },
+  "contacts": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us for any questions or to schedule a service",
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Working Hours"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Thank you! We will respond within 24 hours."
+    },
+    "map": {
+      "title": "Visit Us"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "contact": "Contact Information",
+    "hours": "Working Hours",
+    "social": "Follow Us",
+    "description": "Professional automotive service and repair. Specializing in American muscle cars.",
+    "quickLinks": "Quick Links",
+    "workingHours": {
+      "weekdays": "Mon - Fri: 8:00 AM - 6:00 PM",
+      "saturday": "Saturday: 9:00 AM - 2:00 PM",
+      "sunday": "Sunday: Closed"
+    }
+  }
+}
