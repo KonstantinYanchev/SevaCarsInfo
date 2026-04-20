@@ -12,7 +12,7 @@ export default function ContactsPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="relative py-20 bg-carbon-900 bg-noise overflow-hidden">
+      <section className="relative py-20 bg-slate-900 bg-noise overflow-hidden">
         <div className="absolute inset-0 bg-hex-pattern opacity-20"></div>
         <div className="absolute inset-0 speed-lines opacity-10"></div>
         
@@ -35,7 +35,7 @@ export default function ContactsPage() {
       </section>
 
       {/* Contact Info & Form */}
-      <section className="py-20 bg-carbon-950">
+      <section className="py-20 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
@@ -88,7 +88,7 @@ export default function ContactsPage() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className="flex items-start space-x-4 p-4 rounded-lg hover:bg-carbon-900 transition-colors"
+                    className="flex items-start space-x-4 p-4 rounded-lg hover:bg-slate-900 transition-colors"
                   >
                     <div className="w-12 h-12 bg-racing-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <item.icon className="w-6 h-6 text-racing-500" />
@@ -111,7 +111,7 @@ export default function ContactsPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-carbon-900 border border-carbon-800 rounded-lg p-8"
+              className="bg-slate-900 border border-slate-800 rounded-lg p-8"
             >
               <h2 className="font-display text-3xl text-white mb-6 tracking-wide">
                 {t('contacts.form.title').toUpperCase()}
@@ -125,7 +125,7 @@ export default function ContactsPage() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 bg-carbon-950 border border-carbon-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors"
+                    className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors"
                     placeholder={t('contacts.form.name')}
                   />
                 </div>
@@ -137,7 +137,7 @@ export default function ContactsPage() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 bg-carbon-950 border border-carbon-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors"
+                    className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors"
                     placeholder={t('contacts.form.email')}
                   />
                 </div>
@@ -149,7 +149,7 @@ export default function ContactsPage() {
                   <input
                     type="tel"
                     id="phone"
-                    className="w-full px-4 py-3 bg-carbon-950 border border-carbon-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors"
+                    className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors"
                     placeholder={t('contacts.form.phone')}
                   />
                 </div>
@@ -161,7 +161,7 @@ export default function ContactsPage() {
                   <textarea
                     id="message"
                     rows={5}
-                    className="w-full px-4 py-3 bg-carbon-950 border border-carbon-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white placeholder-carbon-500 focus:outline-none focus:border-racing-500 transition-colors resize-none"
                     placeholder={t('contacts.form.message')}
                   ></textarea>
                 </div>
@@ -182,7 +182,7 @@ export default function ContactsPage() {
       </section>
 
       {/* Map Section (Placeholder) */}
-      <section className="relative py-20 bg-carbon-900 border-t border-carbon-800 overflow-hidden">
+      <section className="relative py-20 bg-slate-900 border-t border-slate-800 overflow-hidden">
         <div className="absolute inset-0 bg-hex-pattern opacity-10"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -196,7 +196,7 @@ export default function ContactsPage() {
             <h2 className="font-display text-4xl text-white mb-8 tracking-wider">
               {t('contacts.map.title').toUpperCase()}
             </h2>
-            <div className="bg-carbon-950 border border-carbon-800 rounded-lg h-96 flex items-center justify-center">
+            <div className="bg-slate-950 border border-slate-800 rounded-lg h-96 flex items-center justify-center">
               <p className="text-carbon-500">Map placeholder - Google Maps integration</p>
             </div>
           </motion.div>

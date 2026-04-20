@@ -16,7 +16,7 @@ export function LanguageSwitcher() {
   return (
     <button
       onClick={toggleLanguage}
-      className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-carbon-800 hover:bg-carbon-700 transition-colors group"
+      className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors group"
       aria-label="Switch language"
     >
       <Globe className="w-4 h-4 text-carbon-300 group-hover:text-racing-500 transition-colors" />

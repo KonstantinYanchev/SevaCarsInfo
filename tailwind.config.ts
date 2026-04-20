@@ -84,6 +84,7 @@ const config: Config = {
       backgroundImage: {
         "grid-pattern": "linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)",
         "diagonal-lines": "repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.03) 10px, rgba(255, 255, 255, 0.03) 20px)",
+        "gradient-radial": "radial-gradient(circle, var(--tw-gradient-stops))",
       },
       backgroundSize: {
         "grid": "50px 50px",

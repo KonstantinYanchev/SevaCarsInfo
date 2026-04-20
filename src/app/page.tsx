@@ -13,13 +13,29 @@ export default function HomePage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-carbon-900 bg-noise">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 bg-hex-pattern opacity-30"></div>
-        <div className="absolute inset-0 speed-lines opacity-20"></div>
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-carbon-950">
+        {/* Background Image with subtle blur */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
+          style={{
+            backgroundImage: "url('/images/hero-background.jpg')",
+            backgroundAttachment: 'fixed',
+            filter: 'blur(1px) brightness(0.77)',
+          }}
+        />
         
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-carbon-900/50 via-transparent to-carbon-900"></div>
+        {/* Smokey atmospheric overlays */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-800/30 to-carbon-950/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-transparent to-slate-900/40"></div>
+        
+        {/* Center spotlight effect - keeps content area brighter */}
+        <div className="absolute inset-0 bg-gradient-radial from-transparent from-20% via-slate-900/20 via-50% to-carbon-950/80"></div>
+        
+        {/* Subtle smoke texture overlay */}
+        <div className="absolute inset-0 bg-noise opacity-30"></div>
+
+        {/* Background decorative elements - very subtle */}
+        <div className="absolute inset-0 bg-hex-pattern opacity-5"></div>
 
         {/* Content */}
         <motion.div
@@ -28,30 +44,40 @@ export default function HomePage() {
           animate="visible"
           className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
         >
-          <motion.div variants={fadeInUp} className="mb-6">
-            <span className="inline-block px-4 py-2 bg-racing-500/10 border border-racing-500/30 rounded-full text-racing-500 text-sm font-sans font-semibold tracking-wide uppercase">
-              {t('hero.badge')}
-            </span>
-          </motion.div>
+          {/* Content backdrop for extra emphasis */}
+          <div className="absolute inset-0 -inset-y-20 bg-gradient-to-b from-transparent via-slate-900/10 to-transparent backdrop-blur-sm rounded-3xl"></div>
+          
+          <div className="relative">
+            <motion.div variants={fadeInUp} className="mb-6">
+              <span className="inline-block px-4 py-2 bg-racing-500/20 border border-racing-500/50 rounded-full text-racing-400 text-sm font-sans font-bold tracking-wide uppercase shadow-lg shadow-racing-500/20">
+                {t('hero.badge')}
+              </span>
+            </motion.div>
 
-          <motion.h1
-            variants={fadeInUp}
-            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-6 tracking-wider text-glow"
-          >
-            {t('hero.title')}
-          </motion.h1>
+            <motion.h1
+              variants={fadeInUp}
+              className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-6 tracking-wider drop-shadow-2xl"
+              style={{ 
+                textShadow: '0 0 40px rgba(0, 0, 0, 0.8), 0 0 80px rgba(0, 0, 0, 0.5), 0 4px 20px rgba(0, 0, 0, 0.9)' 
+              }}
+            >
+              {t('hero.title')}
+            </motion.h1>
 
-          <motion.p
-            variants={fadeInUp}
-            className="font-sans text-lg sm:text-xl text-carbon-200 mb-12 max-w-2xl mx-auto"
-          >
-            {t('hero.subtitle')}
-          </motion.p>
+            <motion.p
+              variants={fadeInUp}
+              className="font-sans text-lg sm:text-xl text-gray-200 mb-12 max-w-2xl mx-auto drop-shadow-lg"
+              style={{
+                textShadow: '0 2px 20px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 1)'
+              }}
+            >
+              {t('hero.subtitle')}
+            </motion.p>
 
-          <motion.div
-            variants={fadeInUp}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
+            <motion.div
+              variants={fadeInUp}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            >
             <Link href="/services">
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -67,12 +93,13 @@ export default function HomePage() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-transparent border-2 border-carbon-600 hover:border-racing-500 text-white font-sans font-bold rounded-lg transition-colors"
+                className="px-8 py-4 bg-transparent border-2 border-slate-600 hover:border-racing-500 hover:bg-racing-500/10 text-white font-sans font-bold rounded-lg transition-all shadow-lg"
               >
                 {t('hero.cta.secondary')}
               </motion.button>
             </Link>
-          </motion.div>
+            </motion.div>
+          </div>
         </motion.div>
 
         {/* Scroll indicator */}
@@ -85,16 +112,16 @@ export default function HomePage() {
             repeat: Infinity,
             repeatType: 'reverse',
           }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
         >
-          <div className="w-6 h-10 border-2 border-carbon-600 rounded-full flex justify-center p-1">
-            <div className="w-1.5 h-2 bg-racing-500 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-slate-500/60 rounded-full flex justify-center p-1 backdrop-blur-sm bg-slate-900/20">
+            <div className="w-1.5 h-2 bg-racing-500 rounded-full shadow-lg shadow-racing-500/50"></div>
           </div>
         </motion.div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-carbon-950 border-t border-carbon-800">
+      <section className="py-20 bg-slate-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -134,7 +161,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 whileHover={{ y: -8 }}
-                className="group p-8 bg-carbon-900 border border-carbon-800 hover:border-racing-500/50 rounded-lg transition-all duration-300"
+                className="group p-8 bg-slate-900 border border-slate-800 hover:border-racing-500/50 rounded-lg transition-all duration-300"
               >
                 <div className="w-16 h-16 bg-racing-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-racing-500/20 transition-colors">
                   <feature.icon className="w-8 h-8 text-racing-500" />

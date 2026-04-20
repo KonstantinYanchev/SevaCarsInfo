@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="relative py-20 bg-carbon-900 bg-noise overflow-hidden">
+      <section className="relative py-20 bg-slate-900 bg-noise overflow-hidden">
         <div className="absolute inset-0 bg-hex-pattern opacity-20"></div>
         <div className="absolute inset-0 speed-lines opacity-10"></div>
         
@@ -35,7 +35,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 bg-carbon-950">
+      <section className="py-20 bg-slate-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -62,7 +62,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-carbon-900 border-t border-carbon-800">
+      <section className="py-20 bg-slate-900 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 key={value.titleKey}
                 variants={fadeInUp}
                 whileHover={{ y: -8 }}
-                className="group relative p-6 bg-carbon-900 border border-carbon-800 hover:border-racing-500/50 rounded-lg transition-all duration-300"
+                className="group relative p-6 bg-slate-900 border border-slate-800 hover:border-racing-500/50 rounded-lg transition-all duration-300"
               >
                 {/* Background accent */}
                 <div className="absolute top-0 right-0 w-24 h-24 bg-racing-500/5 rounded-full blur-3xl group-hover:bg-racing-500/10 transition-colors"></div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section (Placeholder) */}
-      <section className="relative py-20 bg-carbon-950 border-t border-carbon-800 overflow-hidden">
+      <section className="relative py-20 bg-slate-950 border-t border-slate-800 overflow-hidden">
         {/* Background elements */}
         <div className="absolute inset-0 bg-tire-track opacity-5"></div>
         

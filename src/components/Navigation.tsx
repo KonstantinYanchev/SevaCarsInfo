@@ -22,7 +22,7 @@ export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-carbon-900/95 backdrop-blur-md border-b border-carbon-800">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -87,7 +87,7 @@ export function Navigation() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-carbon-100 hover:text-white hover:bg-carbon-800 transition-colors"
+              className="md:hidden p-2 rounded-lg text-carbon-100 hover:text-white hover:bg-slate-800 transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
@@ -108,7 +108,7 @@ export function Navigation() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="md:hidden border-t border-carbon-800 bg-carbon-900"
+            className="md:hidden border-t border-slate-800 bg-slate-900"
           >
             <div className="px-4 py-4 space-y-2">
               {navLinks.map((link, index) => {
@@ -130,7 +130,7 @@ export function Navigation() {
                       className={`block px-4 py-3 rounded-lg font-sans font-medium transition-colors ${
                         isActive
                           ? 'bg-racing-500/10 text-racing-500'
-                          : 'text-carbon-100 hover:bg-carbon-800 hover:text-white'
+                          : 'text-carbon-100 hover:bg-slate-800 hover:text-white'
                       }`}
                     >
                       {t(`nav.${link.key}`)}
