@@ -1,45 +1,40 @@
 {
-  "version": "1",
+  "version": 1,
   "skills": {
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "516bd2154eb843a8240e43d5b285229129853114ad7075a5e141e1c08e408c84"
+    },
     "generate-image": {
       "source": "davila7/claude-code-templates",
       "sourceType": "github",
-      "computedHash": "a3f8c2d1e9b4760f5a2c8d3e1f9b4a7c2d8e3f1"
+      "computedHash": "f71c2d3041659ad807e53c1cba2e8e7150d14b90402c0948eed01a2821ddfa06"
     },
     "react-expert": {
       "source": "jeffallan/claude-skills",
       "sourceType": "github",
-      "computedHash": "b5d9e2f3a1c7840g6b3d9e2f1a5c7b3d9e2f1a5"
+      "computedHash": "455a19a29228e1a098cb4735c6f35e881fa7d69fa20822b5d8a588c0182f6361"
+    },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "computedHash": "2e91c1a968d435712d1deb3845a35021842c168f132f81027c071ad43f78cb0a"
+    },
+    "shadcn": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "computedHash": "642a177bee320618caa49f5106cadb4e7594c606e867f61ba7b56d19cf745cd5"
     },
     "tailwindcss": {
       "source": "hairyf/skills",
       "sourceType": "github",
-      "computedHash": "c7e1f4g2b9d5820h7c4f1g2b9e5c7f4g2b9d5e1"
-    },
-    "tailwindcss-animations": {
-      "source": "josiahsiegel/claude-plugin-marketplace",
-      "sourceType": "github",
-      "computedHash": "d9f3g5h1c7e2840i8d5g3h1c9f2g5h1c7e2840i"
-    },
-    "shadcn": {
-      "source": "shadcn/skills",
-      "sourceType": "github",
-      "computedHash": "PLACEHOLDER"
+      "computedHash": "78937e1d72496af3e902292eb66b8ad2cdd2d34b90b5428257aae9056678d465"
     },
     "web-design-guidelines": {
-      "source": "web-design-guidelines/skills",
+      "source": "vercel-labs/agent-skills",
       "sourceType": "github",
-      "computedHash": "PLACEHOLDER"
-    },
-    "seo-audit": {
-      "source": "seo-audit/skills",
-      "sourceType": "github",
-      "computedHash": "PLACEHOLDER"
-    },
-    "frontend-design": {
-      "source": "frontend-design/skills",
-      "sourceType": "github",
-      "computedHash": "PLACEHOLDER"
+      "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
     }
   }
 }
