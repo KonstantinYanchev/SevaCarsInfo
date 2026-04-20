@@ -1,11 +1,11 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0a1628] text-white">
+    <main className="min-h-screen bg-primary text-white">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center min-h-screen px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
           Welcome to{" "}
-          <span className="text-[#e63329]">Seva Cars Info</span>
+          <span className="text-accent">Seva Cars Info</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-10">
           Your trusted source for car information, reviews, and the latest
@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="#explore"
-            className="px-8 py-3 rounded-full bg-[#e63329] hover:bg-[#cc2e25] transition-colors font-semibold text-white"
+            className="px-8 py-3 rounded-full bg-accent hover:bg-accent-600 transition-colors font-semibold text-white"
           >
             Explore Cars
           </a>
