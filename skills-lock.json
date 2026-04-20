@@ -1,0 +1,45 @@
+{
+  "version": "1",
+  "skills": {
+    "generate-image": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "computedHash": "a3f8c2d1e9b4760f5a2c8d3e1f9b4a7c2d8e3f1"
+    },
+    "react-expert": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "computedHash": "b5d9e2f3a1c7840g6b3d9e2f1a5c7b3d9e2f1a5"
+    },
+    "tailwindcss": {
+      "source": "hairyf/skills",
+      "sourceType": "github",
+      "computedHash": "c7e1f4g2b9d5820h7c4f1g2b9e5c7f4g2b9d5e1"
+    },
+    "tailwindcss-animations": {
+      "source": "josiahsiegel/claude-plugin-marketplace",
+      "sourceType": "github",
+      "computedHash": "d9f3g5h1c7e2840i8d5g3h1c9f2g5h1c7e2840i"
+    },
+    "shadcn": {
+      "source": "shadcn/skills",
+      "sourceType": "github",
+      "computedHash": "PLACEHOLDER"
+    },
+    "web-design-guidelines": {
+      "source": "web-design-guidelines/skills",
+      "sourceType": "github",
+      "computedHash": "PLACEHOLDER"
+    },
+    "seo-audit": {
+      "source": "seo-audit/skills",
+      "sourceType": "github",
+      "computedHash": "PLACEHOLDER"
+    },
+    "frontend-design": {
+      "source": "frontend-design/skills",
+      "sourceType": "github",
+      "computedHash": "PLACEHOLDER"
+    }
+  }
+}
